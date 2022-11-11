@@ -22,10 +22,15 @@
       </div>
       <div id="ground"></div>
     </div>
-  <audio src="./audio/911.mp3" type="audio/mpeg" autoplay controls hidden loop></audio>
+  <audio id="auto" src="./audio/911.mp3" type="audio/mpeg" autoplay controls hidden loop></audio>
 </body>
 <!-- partial -->
   <script  src="./script.js"></script>
+  <srript>
+    window.onload = function(){
+      document.getElementById("auto").play();
+    }
+  </script>
   <script>
     // You can change global variables here:
     var radius = 240; // how big of the radius
